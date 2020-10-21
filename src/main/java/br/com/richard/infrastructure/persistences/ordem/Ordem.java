@@ -36,5 +36,7 @@ public class Ordem {
     public void setUserId(Long userId) {
         this.userId = userId;
     }
-
+    public Long getUserId() {
+        return userId;
+    }
 }
