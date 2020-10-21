@@ -1,4 +1,4 @@
-package br.com.richard.domain.ordem;
+package br.com.richard.infrastructure.persistence.ordem;
 
 import javax.persistence.*;
 import java.math.BigDecimal;

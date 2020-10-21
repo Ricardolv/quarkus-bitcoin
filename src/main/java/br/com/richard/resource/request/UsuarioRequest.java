@@ -1,13 +1,36 @@
 package br.com.richard.resource.request;
 
-import javax.json.bind.annotation.JsonbProperty;
-
 public class UsuarioRequest {
 
     private String nome;
     private String cpf;
-
-    @JsonbProperty(value = "username")
     private String userName;
     private String password;
+
+
+    public String getNome() {
+        return nome;
+    }
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+    public String getCpf() {
+        return cpf;
+    }
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
+    public String getUserName() {
+        return userName;
+    }
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+    public String getPassword() {
+        return password;
+    }
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
 }
