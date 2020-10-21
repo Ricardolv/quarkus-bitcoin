@@ -6,6 +6,7 @@ import io.quarkus.elytron.security.common.BcryptUtil;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.transaction.Transactional;
+import java.util.List;
 
 @ApplicationScoped
 public class UsuarioService {
@@ -19,6 +20,10 @@ public class UsuarioService {
 
     }
 
+    public List<Usuario> listar() {
+        return Usuario.listAll();
+    }
+
     private String validarUsername(String userName) {
 
         if (userName.equalsIgnoreCase("quarkus")) {
@@ -27,4 +32,6 @@ public class UsuarioService {
 
         return RoleName.USER;
     }
+
+
 }
