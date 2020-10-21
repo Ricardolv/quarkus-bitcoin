@@ -1,6 +1,6 @@
 package br.com.richard.resource.converter;
 
-import br.com.richard.infrastructure.persistence.usuario.Usuario;
+import br.com.richard.infrastructure.persistences.usuario.Usuario;
 import br.com.richard.resource.converter.mapper.UsuarioMapper;
 import br.com.richard.resource.request.UsuarioRequest;
 

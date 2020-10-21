@@ -1,4 +1,4 @@
-package br.com.richard.infrastructure.persistence.ordem;
+package br.com.richard.infrastructure.persistences.ordem;
 
 import io.quarkus.hibernate.orm.panache.PanacheRepository;
 

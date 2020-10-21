@@ -1,6 +1,6 @@
 package br.com.richard.resource.converter;
 
-import br.com.richard.infrastructure.persistence.ordem.Ordem;
+import br.com.richard.infrastructure.persistences.ordem.Ordem;
 import br.com.richard.resource.converter.mapper.OrdemMapper;
 import br.com.richard.resource.request.OrdemRequest;
 

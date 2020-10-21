@@ -1,7 +1,7 @@
 package br.com.richard.domain.ordem;
 
-import br.com.richard.infrastructure.persistence.ordem.Ordem;
-import br.com.richard.infrastructure.persistence.ordem.OrdemRepository;
+import br.com.richard.infrastructure.persistences.ordem.Ordem;
+import br.com.richard.infrastructure.persistences.ordem.OrdemRepository;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.transaction.Transactional;
