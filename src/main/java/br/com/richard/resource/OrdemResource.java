@@ -1,9 +1,11 @@
 package br.com.richard.resource;
 
+import br.com.richard.application.config.roles.RoleName;
 import br.com.richard.domain.ordem.OrdemService;
 import br.com.richard.resource.converter.OrdemConverter;
 import br.com.richard.resource.request.OrdemRequest;
 
+import javax.annotation.security.RolesAllowed;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
@@ -22,7 +24,9 @@ public class OrdemResource {
 
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
+    @RolesAllowed(RoleName.USER)
     public void insert(OrdemRequest ordemRequest) {
         ordemService.insert(ordemConverter.converter(ordemRequest));
     }
+
 }
